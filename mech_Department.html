@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mechanical Engineering | National Engineering College, Kovilpatti</title>
+  <link rel="stylesheet" href="mech_Department.css" />
+  <!-- QRCode.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Mechanical Engineering</h1>
+    <a class="back" href="college.html">&larr; Back to Departments</a>
+  </header>
+
+  <section class="intro">
+    <p>Established in 1984 | NBA Accredited | Focus on Manufacturing, Thermal Engineering, CAD/CAM & Design</p>
+  </section>
+
+  <section id="qrSection">
+    <h2>Department Location QR Code</h2>
+    <p>Scan to get directions to the Mechanical Engineering Department on campus</p>
+    <div id="qrBox"></div>
+    <a href="https://maps.app.goo.gl/kMYHEYND77SVyP3A9" target="_blank">
+      <button class="map-btn">Open Directions in Google Maps</button>
+    </a>
+  </section>
+
+  <section class="gallery">
+    <h2>Department Labs & Facilities</h2>
+    <div class="gallery-grid">
+      <img src="https://nec.edu.in/wp-content/uploads/2024/01/COMPOSITE-LAB.jpg" alt="Composite Materials Lab" />
+      <img src="https://nec.edu.in/wp-content/uploads/2024/01/Strength-of-Materials-Lab.png" alt="Strength of Materials Lab" />
+      <img src="https://nec.edu.in/wp-content/uploads/2024/01/Hydraulics-Laboratory.jpg" alt="Hydraulics Laboratory" />
+      <img src="https://nec.edu.in/wp-content/uploads/2024/01/Machines-Lab.jpg" alt="Machines Lab" />
+      <img src="https://nec.edu.in/wp-content/uploads/2024/01/Digital-Fabrication-Laboratory-2.png" alt="Digital Fabrication Laboratory" />
+      <img src="https://nec.edu.in/wp-content/uploads/2024/01/Thermal-Engineering-Laboratory.jpg" alt="Thermal Engineering Laboratory" />
+    </div>
+  </section>
+
+  <section class="faculty-section">
+    <h2>Faculty Members</h2>
+    <ul class="faculty">
+      <li>
+        <button data-faculty="iyahraja">Dr. S. Iyahraja (Professor & HoD)</button>
+        <div id="iyahraja" class="details">
+          <p>Professor & Head of Department</p>
+          <p>Specialization: Manufacturing Engineering</p>
+          <p>Email: mechhod@nec.edu.in</p>
+        </div>
+      </li>
+      <li>
+        <button data-faculty="manisekar">Dr. K. Manisekar (Professor)</button>
+        <div id="manisekar" class="details">
+          <p>Professor</p>
+          <p>Specialization: Production Engineering</p>
+        </div>
+      </li>
+      <li>
+        <button data-faculty="venkatkumar">Dr. D. Venkatkumar (Professor)</button>
+        <div id="venkatkumar" class="details">
+          <p>Professor</p>
+          <p>Specialization: Thermal Engineering</p>
+        </div>
+      </li>
+      <li>
+        <button data-faculty="harichandran">Dr. R. Harichandran (Professor)</button>
+        <div id="harichandran" class="details">
+          <p>Professor</p>
+          <p>Specialization: Design Engineering</p>
+        </div>
+      </li>
+      <li>
+        <button data-faculty="kathiresan">Dr. M. Kathiresan (Professor)</button>
+        <div id="kathiresan" class="details">
+          <p>Professor</p>
+          <p>Specialization: CAD/CAM, Robotics</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2026 National Engineering College – Mechanical Engineering Department
+  </footer>
+
+  <script src="mech_Department.js"></script>
+</body>
+</html>

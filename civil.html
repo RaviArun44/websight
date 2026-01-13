@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Civil Engineering | National Engineering College, Kovilpatti</title>
+  <link rel="stylesheet" href="civil.css" />
+  <!-- QRCode.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Civil Engineering</h1>
+    <a class="back" href="college.html">&larr; Back to Departments</a>
+  </header>
+
+  <section class="intro">
+    <p>Established in 1984 | NBA Accredited | Focus on Structural Engineering, Geotechnical Engineering, Water Resources & Transportation</p>
+  </section>
+
+  <section id="qrSection">
+    <h2>Department Location QR Code</h2>
+    <p>Scan to get directions to the Civil Engineering Department on campus</p>
+    <div id="qrBox"></div>
+    <a href="https://maps.app.goo.gl/ZHgWSfpuYcPXZuf28" target="_blank">
+      <button class="map-btn">Open Directions in Google Maps</button>
+    </a>
+  </section>
+
+  <section class="gallery">
+    <h2>Department Labs & Facilities</h2>
+    <div class="gallery-grid">
+      <img src="https://nec.edu.in/wp-content/uploads/2024/01/Strength-of-Materials-Lab.png" alt="Strength of Materials Lab" />
+      <img src="https://nec.edu.in/wp-content/uploads/2024/01/Hydraulics-Laboratory.jpg" alt="Hydraulics Laboratory" />
+      <img src="https://nec.edu.in/wp-content/uploads/2024/01/Soil-Mechanics-Lab.jpg" alt="Soil Mechanics Lab" />
+      <img src="https://nec.edu.in/wp-content/uploads/2024/01/Surveying-Lab.jpg" alt="Surveying Laboratory" />
+      <img src="https://nec.edu.in/wp-content/uploads/2024/01/Concrete-and-Highway-Lab.jpg" alt="Concrete & Highway Engineering Lab" />
+      <img src="https://nec.edu.in/wp-content/uploads/2024/01/Environmental-Engineering-Lab.jpg" alt="Environmental Engineering Lab" />
+    </div>
+  </section>
+
+  <section class="faculty-section">
+    <h2>Faculty Members</h2>
+    <ul class="faculty">
+      <li>
+        <button data-faculty="rajkumar">Dr. P. Rajkumar (Professor & HoD)</button>
+        <div id="rajkumar" class="details">
+          <p>Professor & Head of Department</p>
+          <p>Specialization: Structural Engineering</p>
+          <p>Email: civilhod@nec.edu.in</p>
+        </div>
+      </li>
+      <li>
+        <button data-faculty="muthukumar">Dr. G. Muthukumar (Professor)</button>
+        <div id="muthukumar" class="details">
+          <p>Professor</p>
+          <p>Specialization: Geotechnical Engineering</p>
+        </div>
+      </li>
+      <li>
+        <button data-faculty="arunachalam">Dr. S. Arunachalam (Professor)</button>
+        <div id="arunachalam" class="details">
+          <p>Professor</p>
+          <p>Specialization: Water Resources Engineering</p>
+        </div>
+      </li>
+      <li>
+        <button data-faculty="shunmugavel">Dr. M. Shunmugavel (Associate Professor)</button>
+        <div id="shunmugavel" class="details">
+          <p>Associate Professor</p>
+          <p>Specialization: Transportation Engineering</p>
+        </div>
+      </li>
+      <li>
+        <button data-faculty="senthilkumar">Dr. R. Senthilkumar (Associate Professor)</button>
+        <div id="senthilkumar" class="details">
+          <p>Associate Professor</p>
+          <p>Specialization: Environmental Engineering</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2026 National Engineering College – Civil Engineering Department
+  </footer>
+
+  <script src="civil.js"></script>
+</body>
+</html>

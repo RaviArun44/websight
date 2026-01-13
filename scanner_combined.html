@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QR Code Generator and Scanner</title>
+  <style>
+    *{box-sizing:border-box}
+    body{
+      margin:0;height:100vh;display:flex;justify-content:center;align-items:center;
+      background:#e0f0ff;font-family:Arial,Helvetica,sans-serif;
+    }
+    .wrapper{
+      background:#fff;padding:1.5rem 2rem;border-radius:12px;
+      box-shadow:0 8px 18px rgba(0,0,0,.12);text-align:center;max-width:400px;width:100%;
+    }
+    h1{margin:0 0 .8rem;color:#004080}
+    #reader{width:320px;margin:auto}
+    #status{font-size:.9rem;color:#555;margin-top:1rem;}
+    .generator{margin-bottom:1rem;}
+    input[type="text"]{width:100%;padding:0.5rem;margin-bottom:0.5rem;border:1px solid #ccc;border-radius:4px;}
+    button{background:#004080;color:#fff;border:none;padding:0.5rem 1rem;border-radius:4px;cursor:pointer;}
+    button:hover{background:#003060;}
+    #qrCanvas{margin-top:1rem;}
+  </style>
+  <!-- QR Code generation library -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+  <!-- QR Code scanning library -->
+  <script src="https://unpkg.com/html5-qrcode@latest"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>QR Code Generator and Scanner</h1>
+    <div class="generator">
+      <input type="text" id="linkInput" placeholder="Enter link to generate QR code" />
+      <button onclick="generateQR()">Generate QR</button>
+      <div id="qrCanvas"></div>
+    </div>
+    <h2>Scan QR Code</h2>
+    <div id="reader"></div>
+    <p id="status">Waiting for QR code…</p>
+  </div>
+
+  <script>
+    // QR Generation
+    function generateQR() {
+      const link = document.getElementById('linkInput').value;
+      if (!link) {
+        alert('Please enter a link');
+        return;
+      }
+      const canvas = document.getElementById('qrCanvas');
+      canvas.innerHTML = ''; // Clear previous
+      QRCode.toCanvas(canvas, link, { width: 200 }, function (error) {
+        if (error) console.error(error);
+      });
+    }
+
+    // QR Scanning
+    document.addEventListener("DOMContentLoaded", () => {
+      const readerDiv = document.getElementById("reader");
+      const statusP = document.getElementById("status");
+
+      const scanner = new Html5QrcodeScanner(
+        "reader",
+        { fps: 10, qrbox: 250, rememberLastUsedCamera: true },
+        false
+      );
+
+      function onSuccess(decodedText) {
+        scanner.clear().then(() => {
+          statusP.textContent = "Decoded pathway: " + decodedText;
+        });
+      }
+      scanner.render(onSuccess, /* onFailure */ () => {});
+    });
+  </script>
+</body>
+</html>

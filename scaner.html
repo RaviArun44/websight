@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scan NEC QR Code</title>
+
+  <!-- Page style -->
+  <link rel="stylesheet" href="scaner.css">
+
+  <!-- QR Code generation library -->
+  <script src="CSE QRcode.png"></script>
+
+  <!-- html5‑qrcode library -->
+  <script src="CSE QRcode.png"></script>
+
+  <!-- Page logic -->
+  <script src="scaner.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Scan to open campus site</h1>
+    <div class="departments">
+      <h2>Department QR Codes</h2>
+      <div class="qr-list">
+        <div class="qr-item">
+          <h3>AI & DS</h3>
+          <canvas id="qr-ai"></canvas>
+        </div>
+        <div class="qr-item">
+          <h3>CSE</h3>
+          <canvas id="qr-cse"></canvas>
+        </div>
+        <div class="qr-item">
+          <h3>IT</h3>
+          <canvas id="qr-it"></canvas>
+        </div>
+        <div class="qr-item">
+          <h3>ECE</h3>
+          <canvas id="qr-ece"></canvas>
+        </div>
+        <div class="qr-item">
+          <h3>EEE</h3>
+          <canvas id="qr-eee"></canvas>
+        </div>
+        <div class="qr-item">
+          <h3>Mechanical</h3>
+          <canvas id="qr-mech"></canvas>
+        </div>
+        <div class="qr-item">
+          <h3>CIVIL</h3>
+          <canvas id="qr-civil"></canvas>
+        </div>
+      </div>
+    </div>
+    <div id="reader"></div>
+    <p id="status">Waiting for QR code…</p>
+  </div>
+</body>
+</html>

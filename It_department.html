@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Information Technology | National Engineering College, Kovilpatti</title>
+  <link rel="stylesheet" href="It_department.css" />
+  <!-- QRCode.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Information Technology</h1>
+    <a class="back" href="college.html">&larr; Back to Departments</a>
+  </header>
+
+  <section class="intro">
+    <p>Established in 2001 | Intake: 60 | Focus on Cyber Warfare, Network Security, Cloud Computing & Web Technologies</p>
+  </section>
+
+  <section id="qrSection">
+    <h2>Department Location QR Code</h2>
+    <p>Scan to get directions to the IT Department on campus</p>
+    <div id="qrBox"></div>
+    <a href="https://maps.app.goo.gl/RkZUhig1RumhNHcR7" target="_blank">
+      <button class="map-btn">Open Directions in Google Maps</button>
+    </a>
+  </section>
+
+  <section class="gallery">
+    <h2>Department Labs & Facilities</h2>
+    <div class="gallery-grid">
+      <img src="https://nec.edu.in/wp-content/uploads/2024/02/PG-Lab-copy-scaled-1-1024x576.webp" alt="IT Postgraduate Lab" />
+      <img src="https://nec.edu.in/wp-content/uploads/2024/02/DSC03959-copy-2-scaled-1-1024x768.webp" alt="IT Computer Center" />
+      <img src="https://nec.edu.in/wp-content/uploads/2024/02/2X5A0382-copy-1024x683.webp" alt="IT Classroom" />
+      <img src="https://nec.edu.in/wp-content/uploads/elementor/thumbs/IP-LAB2-scaled-copy-1-qk185onjic94y9kcns0pgmh5d3ad9m0mf2bckq1lsw.webp" alt="Internet Programming Lab" />
+      <img src="https://cache.careers360.mobi/media/colleges/social-media/media-gallery/3666/2019/3/20/IT%20Lab%20of%20National%20Engineering%20College%20Kovilpatti_IT-Lab.jpg" alt="Advanced IT Lab" />
+    </div>
+  </section>
+
+  <section class="faculty-section">
+    <h2>Faculty Members</h2>
+    <ul class="faculty">
+      <li>
+        <button data-faculty="srinivasagan">Dr. K.G. Srinivasagan (Professor & HoD)</button>
+        <div id="srinivasagan" class="details">
+          <p>Professor & Head of Department</p>
+          <p>Specialization: Information Technology, Cyber Security</p>
+          <p>Email: ithod@nec.edu.in</p>
+        </div>
+      </li>
+      <li>
+        <button data-faculty="other1">Experienced Faculty Team</button>
+        <div id="other1" class="details">
+          <p>14 Qualified Faculty Members</p>
+          <p>Areas: Network Security, Cloud Computing, Web Development, IoT</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2026 National Engineering College – Information Technology Department
+  </footer>
+
+  <script src="It_department.js"></script>
+</body>
+</html>
