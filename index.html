@@ -7,18 +7,43 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="background-overlay"></div> <!-- For subtle light blink effect -->
+
+  <!-- Advertisement Overlay -->
+  <div id="ad-overlay">
+    <div class="ad-box">
+      <h2>📢 Special Announcement from NEC</h2>
+      
+      <!-- First AD image (ITA) -->
+      <div id="ad-image-1" class="ad-image-container">
+        <img src="ITAfinal.png" alt="ITA Award / Certification - National Engineering College" class="ad-image">
+        <p>ITA Excellence Recognition</p>
+      </div>
+      
+      <!-- Second AD image (WhatsApp style) - hidden initially -->
+      <div id="ad-image-2" class="ad-image-container" style="display: none;">
+        <img src="WhatsApp Image 2026-02-10 at 3.40.51 PM.jpeg" alt="NEC Campus / Placement / Event Advertisement" class="ad-image">
+        <p>Latest Updates & Offers</p>
+      </div>
+
+      <p>Ad closes in <span id="ad-timer">20</span> seconds</p>
+      
+      <a href="#main-content" class="ad-view-btn" onclick="closeAd()">View Site Fully</a>
+      <button class="ad-cancel-btn" onclick="closeAd()">Cancel Ad</button>
+    </div>
+  </div>
+
+  <div class="background-overlay"></div>
 
   <header>
     <div class="header-container">
-      <img src="https://facultytick.com/wp-content/uploads/2022/03/National-Engineering-College.jpg" alt="NEC Logo" class="logo" />
+      <img src="https://facultytick.com/wp-content/uploads/2022/03/National-Engineering-College.jpg" class="logo" />
       <h1>National Engineering College, Kovilpatti</h1>
     </div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="college.html">Departments</a></li>
-        <li><a href="hostel.html">HOSTEL</a></li>
+        <li><a href="hostel.html">Hostel</a></li>
         <li><a href="admission.html">Admissions</a></li>
         <li><a href="placement.html">Placements</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -27,29 +52,32 @@
     </nav>
   </header>
 
-  <main>
+  <marquee direction="left" scrollamount="5">
+    <b>NATIONAL ENGINEERING COLLEGE KOVILPATTI</b>
+  </marquee>
+
+  <main id="main-content">
     <section class="hero">
       <h2>Welcome to National Engineering College</h2>
-      <p>An Autonomous Institution Affiliated to Anna University | Established in 1984</p>
-      <p>Transforming lives through quality education and research with human values.</p>
+      <p>An Autonomous Institution Affiliated to Anna University</p>
+      <p>Established in 1984</p>
     </section>
 
     <section class="campus-images">
       <h2>Campus Gallery</h2>
       <div class="gallery">
-        <img src="https://content3.jdmagicbox.com/comp/kovilpatti/p5/9999p4632.4632.090822183654.a6p5/catalogue/national-engineering-college-kovilpatti-ho-kovilpatti-colleges-23zwuj7.jpg" alt="College Entrance Gate" />
-        <img src="https://img.jagranjosh.com/images/2023/January/312023/National-Engineering-College-NEC-Kovilpatti-Campus-View-1.jpg" alt="Main Building View" />
-        <img src="https://d2lk14jtvqry1q.cloudfront.net/media/0103201911575_4f5c238b72.jpg" alt="Panoramic Campus View" />
-        <img src="https://nec.edu.in/wp-content/uploads/2024/01/GHostel1.jpg" alt="Gents Hostel" />
-        <img src="https://nec.edu.in/wp-content/uploads/2024/02/PG-Lab-copy-scaled-1-1024x576.webp" alt="Modern IT Lab" />
-        <img src="https://nec.edu.in/wp-content/uploads/2024/02/01-Electrical-Workshop-1-1024x576.jpg" alt="EEE Lab" />
+        <img src="https://content3.jdmagicbox.com/comp/kovilpatti/p5/9999p4632.4632.090822183654.a6p5/catalogue/national-engineering-college-kovilpatti-ho-kovilpatti-colleges-23zwuj7.jpg">
+        <img src="https://img.jagranjosh.com/images/2023/January/312023/National-Engineering-College-NEC-Kovilpatti-Campus-View-1.jpg">
+        <img src="https://d2lk14jtvqry1q.cloudfront.net/media/0103201911575_4f5c238b72.jpg">
+        <img src="https://nec.edu.in/wp-content/uploads/2024/01/GHostel1.jpg">
+        <img src="https://nec.edu.in/wp-content/uploads/2024/02/PG-Lab-copy-scaled-1-1024x576.webp">
+        <img src="https://nec.edu.in/wp-content/uploads/2024/02/01-Electrical-Workshop-1-1024x576.jpg">
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 National Engineering College, Kovilpatti. All Rights Reserved.</p>
-    <p>K.R. Nagar, Kovilpatti - 628 503, Thoothukudi District, Tamil Nadu, India.</p>
+    <p>© 2025 National Engineering College, Kovilpatti</p>
   </footer>
 
   <script src="script.js"></script>
